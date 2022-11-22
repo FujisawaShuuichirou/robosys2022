@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-#SPDX-FileCopyright Text:2022 Shuichiro Fujisawa
-#SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: 2022 Shuichiro Fujisawa
+# SPDX-License-Identifier: BSD-3-Clause
+
 import sys
 
 ans = 0.0

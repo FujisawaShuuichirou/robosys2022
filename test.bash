@@ -9,7 +9,7 @@ ng () {
 
 res=0
 
-### I/O TEST ###
+### I/O TEST ###  plus test
 out=$(seq 5 | ./plus)
   [ "${out}" = 15.0 ] || ng ${LINENO}
     　 
@@ -21,6 +21,10 @@ out=$(seq 5 | ./plus)
   out=$(echo | ./plus)
   [ "$?" = 1 ]      || ng ${LINENO}
   [ "${out}" = "" ] || ng ${LINENO}
-    　 
+    
+  ### I/O TEST ###  prime test
+out=$(seq 1000 | ./prime | ./judge)
+[ "${out}" = 0 ] || ng ${LINENO}
+　 
 [ "$res" = 0 ] && echo OK
   exit $res

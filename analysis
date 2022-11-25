@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Shuichiro Fujisawa
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+count = 0
+for nums in sys.stdin:
+    x = int(nums)
+    n = 1
+    while n <= x:
+        ### 素数掃き出し ###
+        fl = 0
+        while n <= x:
+            if x % n == 0:
+                fl += 1
+            n += 1
+        #-------------------
+        if fl == 2:
+            exp = 0
+            while x % n == 0:
+                x = x / n
+                exp = + 1
+
+
+
+
+        
+
+
+
+    if count == 0:
+        print(int(nums))
+    count += 1

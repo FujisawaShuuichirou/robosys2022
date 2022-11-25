@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Shuichiro Fujisawa
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+for line in sys.stdin:
+    fl = 0
+    n = 1
+    while n <= int(line):
+        if int(line) % n == 0:
+            fl += 1
+        n += 1
+
+    if fl == 2:
+        print(int(line))
+
+

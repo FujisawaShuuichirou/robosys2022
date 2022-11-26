@@ -22,6 +22,12 @@ out=$(seq 5 | ./plus)
   [ "$?" = 1 ]      || ng ${LINENO}
   [ "${out}" = "" ] || ng ${LINENO}
     
+### I/O TEST ###  judge test
+out=$(echo 7 | ./judge)
+  [ "${out}" = 0 ] || ng ${LINENO}
+out=$(echo 8 | ./judge)
+  [ "${out}" != 0 ] || ng ${LINENO}
+
 ### I/O TEST ###  prime test
 out=$(seq 1000 | ./prime | ./judge)
 [ "${out}" = 0 ] || ng ${LINENO}

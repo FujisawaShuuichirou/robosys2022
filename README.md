@@ -1,7 +1,11 @@
-# plusコマンド
+# コマンド
+* plus : 足し算
+* prime : 素数出力
+* judge : 素数判定
+* analysis : 素因数分解
 ![test](https://github.com/FujisawaShuuichirou/robosys2022/actions/workflows/test.yml/badge.svg)
 
-標準入力から読み込んだ数字を足す。
+## ダウンロード方法
 
 ## 必要なソフトウェア
 * Python

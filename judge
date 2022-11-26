@@ -20,4 +20,7 @@ for line in sys.stdin:
         #print(line + "は素数"),
     #if fl == 1:
         #print(line + "は素数ではない")
-print(fl)
+if fl == 0:
+    print(0)
+if fl != 0:
+    print(1)

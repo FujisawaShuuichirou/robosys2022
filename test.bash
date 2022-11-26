@@ -23,10 +23,12 @@ out=$(seq 5 | ./plus)
   [ "${out}" = "" ] || ng ${LINENO}
     
 ### I/O TEST ###  judge test
-out=$(echo 7 | ./judge)
+echo 2 3 5 7 11 > nums
+out=$(cat nums | tr ' ' '\n' | ./judge)
   [ "${out}" = 0 ] || ng ${LINENO}
-out=$(echo 8 | ./judge)
-  [ "${out}" != 0 ] || ng ${LINENO}
+echo 2 3 5 7 12 > nums
+out=$(cat nums | tr ' ' '\n' | ./judge)
+  [ "${out}" = 1 ] || ng ${LINENO}
 
 ### I/O TEST ###  prime test
 out=$(seq 1000 | ./prime | ./judge)

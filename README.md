@@ -60,6 +60,10 @@
   /robosys2022$ echo 2 3 5 7 11 > nums
   /robosys2022$ cat nums | tr ' ' '\n' | ./judge
   0
+  
+  /robosys2022$ echo 2 3 5 7 12 > nums
+  /robosys2022$ cat nums | tr ' ' '\n' | ./judge
+  1
   ```
 
 ## analysisコマンド

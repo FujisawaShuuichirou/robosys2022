@@ -22,9 +22,17 @@ out=$(seq 5 | ./plus)
   [ "$?" = 1 ]      || ng ${LINENO}
   [ "${out}" = "" ] || ng ${LINENO}
     
-  ### I/O TEST ###  prime test
+### I/O TEST ###  prime test
 out=$(seq 1000 | ./prime | ./judge)
 [ "${out}" = 0 ] || ng ${LINENO}
+
+### I/O TEST ###  analysis test
+out=$(echo 54 | ./analysis)
+[ "${out}" = "54
+=[(2, '^1'), (3, '^3')]" ] || ng ${LINENO}
+out=$(echo 100 | ./analysis)
+[ "${out}" = "100
+=[(2, '^2'), (5, '^2')]" ] || ng ${LINENO}
 　 
 [ "$res" = 0 ] && echo OK
   exit $res

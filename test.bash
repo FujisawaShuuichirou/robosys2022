@@ -37,10 +37,10 @@ out=$(seq 1000 | ./prime | ./judge)
 ### I/O TEST ###  analysis test
 out=$(echo 54 | ./analysis)
 [ "${out}" = "54
-=[(2, '^1'), (3, '^3')]" ] || ng ${LINENO}
+=[[2, '^1'], [3, '^3']]" ] || ng ${LINENO}
 out=$(echo 100 | ./analysis)
 [ "${out}" = "100
-=[(2, '^2'), (5, '^2')]" ] || ng ${LINENO}
+=[[2, '^2'], [5, '^2']]" ] || ng ${LINENO}
 　 
 [ "$res" = 0 ] && echo OK
   exit $res

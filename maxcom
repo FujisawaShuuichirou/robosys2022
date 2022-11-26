@@ -4,6 +4,7 @@
 
 import sys
 
+parent = []
 for nums in sys.stdin:
     bigline = []
     if int(nums) == 1:#例外処理
@@ -33,5 +34,6 @@ for nums in sys.stdin:
                 bigline.append(line)
 
     print( str(nums) + "=" + str(bigline))
+    parent.append(bigline)
 
 

@@ -21,7 +21,6 @@
 
 * 使用例
   ```
-  
   #例1
   /robosys2022$ echo 1 2 3 4 5 > nums
   /robosys2022$ cat nums | tr ' ' '\n' | ./plus
@@ -30,7 +29,6 @@
   #例2
   /robosys2022$ seq 5 | ./plus
   15.0
-
   ```
 
 ## primeコマンド
@@ -39,7 +37,6 @@
 
 * 使用例
   ```
-
   #例1
   /robosys2022$ echo 1 2 3 4 5 > nums
   /robosys2022$ cat nums | tr ' ' '\n' | ./prime
@@ -51,8 +48,7 @@
   /robosys2022$ seq 5 | ./prime
   2
   3
-  2
-
+  5
   ```
 
 ## judgeマンド
@@ -61,11 +57,9 @@
 
 * 使用例
   ```
-
   /robosys2022$ echo 2 3 5 7 11 > nums
   /robosys2022$ cat nums | tr ' ' '\n' | ./judge
   0
-
   ```
 
 ## analysisコマンド
@@ -74,7 +68,6 @@
 
 * 使用例
   ```
-
   /robosys2022$ echo 54 100 759 > nums
   /robosys2022$ cat nums | tr ' ' '\n' | ./analysis
   54
@@ -83,7 +76,6 @@
   =[(2, '^2'), (5, '^2')]
   759
   =[(3, '^1'), (11, '^1'), (23, '^1')]
-
   ```
 
 ## 必要なソフトウェア

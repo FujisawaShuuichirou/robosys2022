@@ -7,7 +7,13 @@
 ![test](https://github.com/FujisawaShuuichirou/robosys2022/actions/workflows/test.yml/badge.svg)
 
 ## ダウンロード方法
+* 以下を端末で実行する
+  '''
 
+  $ git clone https://github.com/hiroki142/robosys_2022.git  #手元にリポジトリをコピー
+  $ cd robosys_2022/                                         #作られたディレクトリに移動
+
+  '''
 ## 必要なソフトウェア
 * Python
   * テスト済み: 3.7〜3.10

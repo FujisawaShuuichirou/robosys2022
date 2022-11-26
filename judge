@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Shuichiro Fujisawa
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+fl = 0
+for line in sys.stdin:
+    i = 2
+    if int(line) == 1:
+        fl += 1
+
+    while i < int(line):
+        if int(line) % i == 0:
+            fl += 1
+            break
+        i += 1
+
+    #if fl == 0:
+        #print(line + "は素数"),
+    #if fl == 1:
+        #print(line + "は素数ではない")
+print(fl)

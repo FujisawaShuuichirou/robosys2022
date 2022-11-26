@@ -4,11 +4,12 @@
 
 import sys
 
+count = 0
 parent = []
 for nums in sys.stdin:
     bigline = []
     if int(nums) == 1:#例外処理
-        ans.setdefault(1, "^1")
+        bigline.append([1, 1])
 
     x = int(nums)
     n = 1
@@ -30,10 +31,11 @@ for nums in sys.stdin:
             if e > 0:
                 exp = "^" + str(e)
                 line.append(i)
-                line.append(exp)
+                line.append(e)
                 bigline.append(line)
 
     print( str(nums) + "=" + str(bigline))
     parent.append(bigline)
+    count += 1
 
 
